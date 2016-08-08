@@ -45,8 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Hyperdrive.cs" />
-     <Compile Include="Assets\ShipMovement.cs" />
+     <Compile Include="Assets\Scripts\Hyperdrive.cs" />
+     <Compile Include="Assets\Scripts\ShipMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

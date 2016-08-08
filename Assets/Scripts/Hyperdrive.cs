@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Hyperdrive : MonoBehaviour
 {
-    public float HyperdriveSpeed = 0.0f;
-    public bool HyperDriveToggle = false;
+    public float HyperdriveSpeed = 25.0f;
+    private bool HyperDriveToggle = false;
     void Update()
     {
 

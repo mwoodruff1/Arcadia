@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//Coded by Matthew Woodruff also known as Camwarp
+
+using UnityEngine;
 using System.Collections;
 
 public class ShipMovement : MonoBehaviour
@@ -15,13 +17,14 @@ public class ShipMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {                       //Vector3.right for up and down
+    {                      
         //Forward Backwards
         if (Input.GetKey("w"))
             transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 
         if (Input.GetKey("s"))
             transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+
         //Left Right
         if (Input.GetKey(KeyCode.D))
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);

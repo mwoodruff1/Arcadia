@@ -22,6 +22,17 @@ public class ShipMovement : MonoBehaviour
 
         if (Input.GetKey("s"))
             transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+        //Left Right
+        if (Input.GetKey(KeyCode.D))
+            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.A))
+            transform.Translate(-Vector3.right * moveSpeed * Time.deltaTime);
+        //Up Down
+        if (Input.GetKey(KeyCode.Space))
+            transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.LeftShift))
+            transform.Translate(-Vector3.up * moveSpeed * Time.deltaTime);
         //Yaw 
         if (Input.GetKey(KeyCode.LeftArrow))
             transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);

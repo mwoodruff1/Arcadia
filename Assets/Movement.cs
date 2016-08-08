@@ -27,7 +27,7 @@ public class Movement : MonoBehaviour{
             {
                 ShipSpeed += ShipSpeedDecrease;
 
-                if (ShipSpeed > ShipTopReverseSpeed)
+                if (ShipSpeed > ShipTopSpeed)
                 {
                     ShipSpeed = ShipTopSpeed;
 }}}

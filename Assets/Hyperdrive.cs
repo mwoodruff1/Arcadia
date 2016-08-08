@@ -4,11 +4,11 @@ using System.Collections;
 public class Hyperdrive : MonoBehaviour
 {
     public float HyperdriveSpeed = 0.0f;
-
+    bool HyperDriveToggle = false;
     void Update()
     {
         
-        bool HyperDriveToggle = false;
+        
         if (Input.GetKey(KeyCode.H))
         {
             HyperDriveToggle = !HyperDriveToggle;

@@ -7,7 +7,7 @@ Forwards, and Backwards. Needs to be reworked to make it where it dosent auto st
 
 Things to do
 
-Add Hyperdrive
+Add Hyperdrive //Finished but Particle Effects
 //Subsytems
 Add Power Systems
 Add Health

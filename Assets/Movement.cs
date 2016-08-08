@@ -3,8 +3,7 @@ using System.Collections;
 public class Movement : MonoBehaviour{
 	
 	//Movement Variables
-	public float ShipTopSpeed = -10.0f;
-    public float ShipTopReverseSpeed = 10.0f;
+	public float ShipTopSpeed = 10.0f;
     public float ShipSpeed = 0.0f;
     public float ShipSpeedIncrease = 0.1f;
     public float ShipSpeedDecrease = -0.1f;
@@ -20,12 +19,21 @@ public class Movement : MonoBehaviour{
 	moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 	moveDirection = transform.TransformDirection(moveDirection);
         controller.Move(this.gameObject.transform.forward * ShipSpeed);
-    
-        
 
-	if (Input.GetKey("s"))
+
+        if (Input.GetKey("w"))
+        {
+            if (ShipSpeed < ShipTopSpeed)
+            {
+                ShipSpeed += ShipSpeedDecrease;
+
+                if (ShipSpeed > ShipTopReverseSpeed)
+                {
+                    ShipSpeed = ShipTopSpeed;
+}}}
+        if (Input.GetKey("s"))
 	{
-            if (ShipSpeed > ShipTopSpeed)
+            if (ShipSpeed > -ShipTopSpeed)
             {
                 ShipSpeed += ShipSpeedIncrease;
 
@@ -34,16 +42,11 @@ public class Movement : MonoBehaviour{
                     ShipSpeed = ShipTopSpeed;
                 }}}
 
-        if (Input.GetKey("w"))
-        {
-            if (ShipSpeed < ShipTopReverseSpeed)
-            {
-                ShipSpeed += ShipSpeedDecrease;
+       
 
-                if (ShipSpeed > ShipTopReverseSpeed)
-                {
-                    ShipSpeed = ShipTopReverseSpeed;
-                }            }       }
+        
+        
+        
         //Yaw 
         if (Input.GetKey(KeyCode.LeftArrow))
             transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);

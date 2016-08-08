@@ -5,6 +5,8 @@ public class ShipMovement : MonoBehaviour
 {
     public float moveSpeed = 10f;
     public float turnSpeed = 50f;
+    
+     
     // Use this for initialization
     void Start()
     {
@@ -13,7 +15,7 @@ public class ShipMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {                       //Vector3.right for up and down
         //Forward Backwards
         if (Input.GetKey("w"))
             transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);

@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\Hyperdrive.cs" />
+     <Compile Include="Assets\Scripts\PowerBaseScript.cs" />
      <Compile Include="Assets\Scripts\ShipMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

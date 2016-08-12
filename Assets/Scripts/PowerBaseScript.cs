@@ -5,9 +5,9 @@ public class PowerBaseScript : MonoBehaviour{
 
 float PowerSystemCap = 2500.00f;
 public float PowerSystemLevel = 0.00f;
-float PowerSystemDecayRate = 25.00f;
-float PowerDecayFormula = 0.0f;
-float PowerSystemOutput = 0.0f;
+
+//float PowerDecayFormula = 0.0f;
+//float PowerSystemOutput = 0.0f;
 
 //These are the formulas for the actual system. One is the Default Power Output and one is the Decay Formula.
 

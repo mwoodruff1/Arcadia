@@ -21,7 +21,7 @@ void Update() {
         //The above will fix the constant increase of the power generation Camwarp 9:25 8/10/2016
 
 
-        if (PowerSystemLevel == PowerSystemCap)
+      /*  if (PowerSystemLevel == PowerSystemCap)
 	Debug.Log("Power System is at 100 Percent");
         if(PowerSystemLevel <= 1875.0f)
 	Debug.Log("Power Level at 75 Percent");
@@ -30,7 +30,7 @@ void Update() {
         if (PowerSystemLevel <= 625.0f)
 	Debug.Log("Power System at 25 Percent");
         if (PowerSystemLevel < 0.0f)
-            Debug.Log("Power System at 0 Percent");
+            Debug.Log("Power System at 0 Percent");*/
 
 }
 

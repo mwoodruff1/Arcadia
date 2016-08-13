@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Health.cs" />
-     <Compile Include="Assets\Scripts\Hyperdrive.cs" />
      <Compile Include="Assets\Scripts\PowerBaseScript.cs" />
      <Compile Include="Assets\Scripts\PowerGenerator.cs" />
      <Compile Include="Assets\Scripts\ShipMovement.cs" />

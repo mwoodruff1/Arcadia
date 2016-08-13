@@ -9,6 +9,7 @@ public class Hyperdrive : MonoBehaviour
     public PowerBaseScript powerLevelAccess;
     void Update()
     {
+        //Not Implemeted.
        /* if(powerLevelAccess.PowerSystemLevel < 500)
         {
             print("Power Level to low to engage Hyperdrive");
@@ -23,9 +24,10 @@ public class Hyperdrive : MonoBehaviour
 
         if (HyperDriveToggle == true) { 
             transform.Translate(Vector3.forward * HyperdriveSpeed * Time.deltaTime);
-        print("This is where the drain code is");
-            powerLevelAccess.PowerSystemLevel = 0;
-            powerLevelAccess.PowerSystemLevel -= PowerDecay;
+            //The below is for the power system. Not currently implemeted due to bugs
+        //print("This is where the drain code is");
+          //  powerLevelAccess.PowerSystemLevel = 0;
+           // powerLevelAccess.PowerSystemLevel -= PowerDecay;
         }
         else
             HyperDriveToggle = false; 

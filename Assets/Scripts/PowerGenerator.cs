@@ -12,14 +12,12 @@ public class PowerGenerator : MonoBehaviour
     {
         //The below adds in a power on and off switch when clicking why.
         if (Input.GetKey(KeyCode.Y))
-        {
-            PowerGeneratorToggle = !PowerGeneratorToggle;
-        }
+        {PowerGeneratorToggle = !PowerGeneratorToggle;}
 
         if (PowerGeneratorToggle == true)
-        {
-            PowerGenOutput += PowerGenAddition + PowerGenActualOutput;
+           {PowerGenOutput += PowerGenAddition + PowerGenActualOutput;
             powerGenerationAccess.PowerSystemLevel = PowerGenOutput;
+
             //Quick fix for power gen problem of constant increase
             if (powerGenerationAccess.PowerSystemLevel > 2500)
                 powerGenerationAccess.PowerSystemLevel = 2500;}
@@ -28,6 +26,5 @@ public class PowerGenerator : MonoBehaviour
 
     }
 }
-/*   
-            */
+
              

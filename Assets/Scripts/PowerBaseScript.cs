@@ -1,3 +1,6 @@
+//Coded by Matthew Woodruff
+//The Arcadia Projects power script.
+//This script should probably be named power storage script. It would make more sense. Since all it does is store, and regulate the power system.
 using UnityEngine;
 using System.Collections;
 
@@ -20,7 +23,7 @@ void Update() {
 			PowerSystemLevel = PowerSystemCap;
         //The above will fix the constant increase of the power generation Camwarp 9:25 8/10/2016
 
-
+        //Yeah the below doesnt work, I dont know why but it dosent work.
       /*  if (PowerSystemLevel == PowerSystemCap)
 	Debug.Log("Power System is at 100 Percent");
         if(PowerSystemLevel <= 1875.0f)

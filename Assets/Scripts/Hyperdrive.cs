@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Hyperdrive : MonoBehaviour
 {
-    float PowerDecay =50.0f;
+    float PowerDecay = 5.0f;
     public float HyperdriveSpeed = 25.0f;
     private bool HyperDriveToggle = false;
     public PowerBaseScript powerLevelAccess;
@@ -24,6 +24,7 @@ public class Hyperdrive : MonoBehaviour
         if (HyperDriveToggle == true) { 
             transform.Translate(Vector3.forward * HyperdriveSpeed * Time.deltaTime);
         print("This is where the drain code is");
+            powerLevelAccess.PowerSystemLevel = 0;
             powerLevelAccess.PowerSystemLevel -= PowerDecay;
         }
         else

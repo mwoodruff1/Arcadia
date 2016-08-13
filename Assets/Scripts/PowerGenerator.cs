@@ -6,13 +6,15 @@ public class PowerGenerator : MonoBehaviour
     public PowerBaseScript powerGenerationAccess;
     private float PowerGenOutput;
     private float PowerGenActualOutput = 0.0f;
-    private float PowerGenAddition = 25.0f;
+    private float PowerGenAddition = 5.0f;
     private bool PowerGeneratorToggle = false;
     void Update()
     {
         //The below adds in a power on and off switch when clicking why.
         if (Input.GetKey(KeyCode.Y))
+        {
             PowerGeneratorToggle = !PowerGeneratorToggle;
+        }
 
         if (PowerGeneratorToggle == true)
         {

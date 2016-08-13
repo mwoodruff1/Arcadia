@@ -7,8 +7,10 @@ public class ShipMovement : MonoBehaviour
 {
     public float moveSpeed = 10f;
     public float turnSpeed = 50f;
-    
-     
+    public float HyperdriveSpeed = 25.0f;
+    private bool HyperDriveToggle = false;
+    public PowerBaseScript powerLevelAccess;
+
     // Use this for initialization
     void Start()
     {
@@ -54,5 +56,14 @@ public class ShipMovement : MonoBehaviour
 
         if (Input.GetKey("e"))
             transform.Rotate(Vector3.forward, -turnSpeed * Time.deltaTime);
+        //HyperSpace
+        if (Input.GetKeyDown(KeyCode.H))
+        { HyperDriveToggle = !HyperDriveToggle; }
+
+        if (HyperDriveToggle == true)
+        {
+            transform.Translate(Vector3.forward * HyperdriveSpeed * Time.deltaTime);}
+        else
+            HyperDriveToggle = false;
     }
 }
